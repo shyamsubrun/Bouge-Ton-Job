@@ -1,0 +1,91 @@
+[
+    {
+      "id": 101,
+      "title": "Développeur Full Stack",
+      "company": "Tech Innov",
+      "location": "Paris, France",
+      "salary": "50k-60k EUR",
+      "employment_type": "CDI",
+      "remote": true,
+      "description": "Vous serez responsable du développement et de la maintenance des applications web de l'entreprise.",
+      "requirements": [
+        "Expérience en développement JavaScript et Python",
+        "Connaissance de React et Django",
+        "Expérience avec les bases de données SQL"
+      ],
+      "published_date": "2024-11-01T09:00:00Z",
+      "platform": {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/jobs/view/101"
+      },
+      "application_url": "https://www.linkedin.com/jobs/apply/101",
+      "tags": ["IT", "Full Stack", "CDI", "Remote"]
+    },
+    {
+      "id": 102,
+      "title": "Data Scientist",
+      "company": "Data Insights",
+      "location": "Lyon, France",
+      "salary": "45k-55k EUR",
+      "employment_type": "CDD",
+      "remote": false,
+      "description": "Analyser les données de l'entreprise et créer des modèles prédictifs pour optimiser les performances.",
+      "requirements": [
+        "Maîtrise des outils de data science (Python, R)",
+        "Connaissance en machine learning",
+        "Expérience avec les outils de visualisation de données"
+      ],
+      "published_date": "2024-10-28T14:30:00Z",
+      "platform": {
+        "name": "Indeed",
+        "url": "https://www.indeed.com/jobs/view/102"
+      },
+      "application_url": "https://www.indeed.com/jobs/apply/102",
+      "tags": ["Data Science", "CDD", "Machine Learning"]
+    },
+    {
+      "id": 103,
+      "title": "Chef de Projet IT",
+      "company": "Digital Solutions",
+      "location": "Marseille, France",
+      "salary": "55k-65k EUR",
+      "employment_type": "CDI",
+      "remote": false,
+      "description": "Gérer des projets informatiques, assurer la coordination entre les équipes, et veiller à la bonne exécution des projets.",
+      "requirements": [
+        "Expérience en gestion de projet IT",
+        "Connaissance des méthodologies Agile",
+        "Bonnes compétences en communication"
+      ],
+      "published_date": "2024-11-02T10:00:00Z",
+      "platform": {
+        "name": "Welcome to the Jungle",
+        "url": "https://www.welcometothejungle.com/jobs/view/103"
+      },
+      "application_url": "https://www.welcometothejungle.com/jobs/apply/103",
+      "tags": ["IT", "Gestion de Projet", "CDI"]
+    },
+    {
+      "id": 104,
+      "title": "Développeur Backend",
+      "company": "Web Corp",
+      "location": "Remote",
+      "salary": "40k-50k EUR",
+      "employment_type": "Freelance",
+      "remote": true,
+      "description": "Conception et développement d'API backend pour les applications web de l'entreprise.",
+      "requirements": [
+        "Maîtrise de Node.js et Express",
+        "Expérience avec les bases de données NoSQL",
+        "Connaissance des pratiques DevOps"
+      ],
+      "published_date": "2024-10-25T13:00:00Z",
+      "platform": {
+        "name": "Monster",
+        "url": "https://www.monster.com/jobs/view/104"
+      },
+      "application_url": "https://www.monster.com/jobs/apply/104",
+      "tags": ["Backend", "Freelance", "Remote"]
+    }
+  ]
+  

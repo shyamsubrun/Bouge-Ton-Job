@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/jobs/",
+      "type": "Réseau social professionnel",
+      "features": {
+        "requires_registration": true,
+        "job_recommendations": true,
+        "salary_estimates": true,
+        "company_reviews": true
+      },
+      "supported_job_types": ["CDI", "CDD", "Freelance", "Stage"],
+      "api_integration": false,
+      "region_coverage": "Global"
+    },
+    {
+      "id": 2,
+      "name": "Indeed",
+      "url": "https://www.indeed.com/",
+      "type": "Site de recherche d'emploi",
+      "features": {
+        "requires_registration": false,
+        "job_recommendations": false,
+        "salary_estimates": true,
+        "company_reviews": true
+      },
+      "supported_job_types": ["CDI", "CDD", "Intérim", "Stage"],
+      "api_integration": true,
+      "region_coverage": "Global"
+    },
+    {
+      "id": 3,
+      "name": "Welcome to the Jungle",
+      "url": "https://www.welcometothejungle.com/",
+      "type": "Site de carrière et d'entreprise",
+      "features": {
+        "requires_registration": true,
+        "job_recommendations": true,
+        "salary_estimates": false,
+        "company_reviews": true
+      },
+      "supported_job_types": ["CDI", "CDD", "Stage"],
+      "api_integration": true,
+      "region_coverage": "Europe"
+    },
+    {
+      "id": 4,
+      "name": "Monster",
+      "url": "https://www.monster.com/",
+      "type": "Site de recherche d'emploi",
+      "features": {
+        "requires_registration": true,
+        "job_recommendations": false,
+        "salary_estimates": false,
+        "company_reviews": false
+      },
+      "supported_job_types": ["CDI", "CDD", "Freelance", "Stage", "Intérim"],
+      "api_integration": false,
+      "region_coverage": "Global"
+    }
+  ]
+  
