@@ -1,0 +1,37 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    /*border-bottom: 2px solid #007BFF;  Couleur de la bordure bleue */
+
+    .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .nav-menu {
+        display: flex;
+        gap: 15px;
+
+        .nav-item {
+            font-size: 1em;
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #f0f0f0;
+            }
+        }
+    }
+
+    .user-icon {
+        width: 30px;
+        height: 30px;
+        background-color: #ddd;
+        border-radius: 50%;
+    }
+}
