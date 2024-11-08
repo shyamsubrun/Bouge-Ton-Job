@@ -4,11 +4,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './page/home/home.component';
+import { BackgroundAnimationComponent } from './component/background-animation/background-animation.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,HttpClientModule,HomeComponent], 
+  imports: [CommonModule, BackgroundAnimationComponent,RouterOutlet,HttpClientModule,HomeComponent], 
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
