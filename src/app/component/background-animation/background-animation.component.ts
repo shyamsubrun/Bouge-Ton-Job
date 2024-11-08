@@ -17,6 +17,8 @@ export class BackgroundAnimationComponent implements OnInit {
   private  couleurtrait = 'rgba(0, 255, 255, 0.6)';//'rgba(135, 206, 250, 0.3)';
   private epaisseurTrait = 5;
 
+  private nbforme = 25;
+
   constructor(private elRef: ElementRef) {}
 
   ngOnInit(): void {
@@ -40,7 +42,7 @@ export class BackgroundAnimationComponent implements OnInit {
 
   private createShapes() {
     const randomColor = () => ['#FF5733', '#33FF57', '#3357FF', '#FF33A1'][Math.floor(Math.random() * 4)];
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < this.nbforme; i++) {
       this.shapes.push({
         x: Math.random() * this.canvas.width,
         y: Math.random() * this.canvas.height,
