@@ -11,7 +11,11 @@ export class BackgroundAnimationComponent implements OnInit {
   private canvas!: HTMLCanvasElement;
   private ctx!: CanvasRenderingContext2D | null;
   private shapes: any[] = [];
+  
   private speedFactor = 0.5; // Réglez cette valeur entre 0 et 1 pour ajuster la vitesse
+ 
+  private  couleurtrait = 'rgba(135, 206, 250, 0.3)';
+  private epaisseurTrait = 10;
 
   constructor(private elRef: ElementRef) {}
 
@@ -83,8 +87,6 @@ export class BackgroundAnimationComponent implements OnInit {
     }
   });
 }
-
-
   // Dessiner les lignes de connexion
   private drawLines() {
     if (!this.ctx) return;
@@ -94,8 +96,8 @@ export class BackgroundAnimationComponent implements OnInit {
         const dy = this.shapes[i].y - this.shapes[j].y;
         const distance = Math.sqrt(dx * dx + dy * dy);
         if (distance < 150) {
-          this.ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
-          this.ctx.lineWidth = 1;
+          this.ctx.strokeStyle = this.couleurtrait; // Bleu clair avec opacité
+          this.ctx.lineWidth = this.epaisseurTrait; // Épaisseur augmentée pour plus de visibilité
           this.ctx.beginPath();
           this.ctx.moveTo(this.shapes[i].x, this.shapes[i].y);
           this.ctx.lineTo(this.shapes[j].x, this.shapes[j].y);
@@ -104,6 +106,7 @@ export class BackgroundAnimationComponent implements OnInit {
       }
     }
   }
+  
 
   // Animation
   private animate() {
