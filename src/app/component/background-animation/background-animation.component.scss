@@ -12,8 +12,8 @@ canvas {
     width: 100%;
     height: 100%;
     display: block;
-    filter: blur(02px); /* Ajustez la valeur pour contrôler l'intensité du flou */
-    opacity: 1; /* Ajustez l'opacité pour un effet subtil */
+    filter: blur(2px); /* Ajustez la valeur pour contrôler l'intensité du flou */
+    //opacity: 0.9; /* Ajustez l'opacité pour un effet subtil */
 }
 
 
