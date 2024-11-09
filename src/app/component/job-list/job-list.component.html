@@ -1,5 +1,22 @@
+<div class="search-filters">
+    <input
+        type="text"
+        placeholder="Rechercher un titre ou une localisation..."
+        [(ngModel)]="searchQuery"
+        (input)="applyFilters()"
+        class="search-input"
+    />
+
+    <select [(ngModel)]="employmentType" (change)="applyFilters()" class="filter-select">
+        <option value="">Type d'emploi</option>
+        <option value="CDI">CDI</option>
+        <option value="Freelance">Freelance</option>
+        <option value="CDD">CDD</option>
+    </select>
+</div>
+
 <div class="job-list-container">
-    <div *ngFor="let job of jobListings" class="job-card" (click)="goToJobDetail(job.id)">
+    <div *ngFor="let job of filteredJobListings" class="job-card" (click)="goToJobDetail(job.id)">
         <div class="job-photo">
             <img [src]="job.photo" alt="Photo de l'offre d'emploi">
         </div>
