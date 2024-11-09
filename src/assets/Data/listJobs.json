@@ -1,5 +1,5 @@
 [
-    {
+  {
       "id": 101,
       "title": "Développeur Full Stack",
       "company": "Tech Innov",
@@ -9,20 +9,20 @@
       "remote": true,
       "description": "Vous serez responsable du développement et de la maintenance des applications web de l'entreprise.",
       "requirements": [
-        "Expérience en développement JavaScript et Python",
-        "Connaissance de React et Django",
-        "Expérience avec les bases de données SQL"
+          "Expérience en développement JavaScript et Python",
+          "Connaissance de React et Django",
+          "Expérience avec les bases de données SQL"
       ],
       "published_date": "2024-11-01T09:00:00Z",
       "platform": {
-        "name": "LinkedIn",
-        "url": "https://www.linkedin.com/jobs/view/101"
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/jobs/view/101"
       },
       "application_url": "https://www.linkedin.com/jobs/apply/101",
       "tags": ["IT", "Full Stack", "CDI", "Remote"],
       "photo": "assets/Job/photo_job.jpeg"
-    },
-    {
+  },
+  {
       "id": 102,
       "title": "Data Scientist",
       "company": "Data Insights",
@@ -32,20 +32,20 @@
       "remote": false,
       "description": "Analyser les données de l'entreprise et créer des modèles prédictifs pour optimiser les performances.",
       "requirements": [
-        "Maîtrise des outils de data science (Python, R)",
-        "Connaissance en machine learning",
-        "Expérience avec les outils de visualisation de données"
+          "Maîtrise des outils de data science (Python, R)",
+          "Connaissance en machine learning",
+          "Expérience avec les outils de visualisation de données"
       ],
       "published_date": "2024-10-28T14:30:00Z",
       "platform": {
-        "name": "Indeed",
-        "url": "https://www.indeed.com/jobs/view/102"
+          "name": "Indeed",
+          "url": "https://www.indeed.com/jobs/view/102"
       },
       "application_url": "https://www.indeed.com/jobs/apply/102",
       "tags": ["Data Science", "CDD", "Machine Learning"],
       "photo": "assets/Job/photo_job.jpeg"
-    },
-    {
+  },
+  {
       "id": 103,
       "title": "Chef de Projet IT",
       "company": "Digital Solutions",
@@ -55,20 +55,20 @@
       "remote": false,
       "description": "Gérer des projets informatiques, assurer la coordination entre les équipes, et veiller à la bonne exécution des projets.",
       "requirements": [
-        "Expérience en gestion de projet IT",
-        "Connaissance des méthodologies Agile",
-        "Bonnes compétences en communication"
+          "Expérience en gestion de projet IT",
+          "Connaissance des méthodologies Agile",
+          "Bonnes compétences en communication"
       ],
       "published_date": "2024-11-02T10:00:00Z",
       "platform": {
-        "name": "Welcome to the Jungle",
-        "url": "https://www.welcometothejungle.com/jobs/view/103"
+          "name": "Welcome to the Jungle",
+          "url": "https://www.welcometothejungle.com/jobs/view/103"
       },
       "application_url": "https://www.welcometothejungle.com/jobs/apply/103",
       "tags": ["IT", "Gestion de Projet", "CDI"],
       "photo": "assets/Job/photo_job.jpeg"
-    },
-    {
+  },
+  {
       "id": 104,
       "title": "Développeur Backend",
       "company": "Web Corp",
@@ -78,18 +78,155 @@
       "remote": true,
       "description": "Conception et développement d'API backend pour les applications web de l'entreprise.",
       "requirements": [
-        "Maîtrise de Node.js et Express",
-        "Expérience avec les bases de données NoSQL",
-        "Connaissance des pratiques DevOps"
+          "Maîtrise de Node.js et Express",
+          "Expérience avec les bases de données NoSQL",
+          "Connaissance des pratiques DevOps"
       ],
       "published_date": "2024-10-25T13:00:00Z",
       "platform": {
-        "name": "Monster",
-        "url": "https://www.monster.com/jobs/view/104"
+          "name": "Monster",
+          "url": "https://www.monster.com/jobs/view/104"
       },
       "application_url": "https://www.monster.com/jobs/apply/104",
       "tags": ["Backend", "Freelance", "Remote"],
       "photo": "assets/Job/photo_job.jpeg"
-    }
-  ]
-  
+  },
+  {
+      "id": 105,
+      "title": "Architecte Cloud",
+      "company": "Cloud Experts",
+      "location": "Toulouse, France",
+      "salary": "60k-70k EUR",
+      "employment_type": "CDI",
+      "remote": false,
+      "description": "Concevoir et gérer l'architecture cloud de l'entreprise pour assurer l'efficacité et la sécurité.",
+      "requirements": [
+          "Expérience avec AWS et Azure",
+          "Connaissance des architectures cloud",
+          "Expérience avec les réseaux et la sécurité"
+      ],
+      "published_date": "2024-10-22T11:00:00Z",
+      "platform": {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/jobs/view/105"
+      },
+      "application_url": "https://www.linkedin.com/jobs/apply/105",
+      "tags": ["Cloud", "AWS", "Architecture", "CDI"],
+      "photo": "assets/Job/photo_job.jpeg"
+  },
+  {
+      "id": 106,
+      "title": "Consultant en Cybersécurité",
+      "company": "Secure IT",
+      "location": "Nantes, France",
+      "salary": "50k-60k EUR",
+      "employment_type": "CDI",
+      "remote": true,
+      "description": "Identifier et résoudre les failles de sécurité dans l'infrastructure IT de l'entreprise.",
+      "requirements": [
+          "Maîtrise des protocoles de sécurité",
+          "Connaissance des normes ISO/IEC 27001",
+          "Expérience en cybersécurité"
+      ],
+      "published_date": "2024-10-20T09:00:00Z",
+      "platform": {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/jobs/view/106"
+      },
+      "application_url": "https://www.linkedin.com/jobs/apply/106",
+      "tags": ["Cybersecurity", "CDI", "Remote"],
+      "photo": "assets/Job/photo_job.jpeg"
+  },
+  {
+      "id": 107,
+      "title": "Ingénieur DevOps",
+      "company": "DevOps Solutions",
+      "location": "Bordeaux, France",
+      "salary": "55k-65k EUR",
+      "employment_type": "CDI",
+      "remote": false,
+      "description": "Automatiser et optimiser les processus de développement et de déploiement des applications.",
+      "requirements": [
+          "Expérience avec Docker et Kubernetes",
+          "Connaissance des outils CI/CD",
+          "Expérience avec les environnements de déploiement cloud"
+      ],
+      "published_date": "2024-10-18T10:00:00Z",
+      "platform": {
+          "name": "Indeed",
+          "url": "https://www.indeed.com/jobs/view/107"
+      },
+      "application_url": "https://www.indeed.com/jobs/apply/107",
+      "tags": ["DevOps", "Docker", "CI/CD", "CDI"],
+      "photo": "assets/Job/photo_job.jpeg"
+  },
+  {
+      "id": 108,
+      "title": "Analyste Sécurité",
+      "company": "SecureTech",
+      "location": "Paris, France",
+      "salary": "45k-55k EUR",
+      "employment_type": "CDD",
+      "remote": false,
+      "description": "Analyser les menaces de sécurité et mettre en œuvre des mesures pour protéger les données de l'entreprise.",
+      "requirements": [
+          "Connaissance des systèmes de sécurité",
+          "Expérience en analyse de sécurité",
+          "Connaissance des outils de surveillance réseau"
+      ],
+      "published_date": "2024-10-15T08:00:00Z",
+      "platform": {
+          "name": "Welcome to the Jungle",
+          "url": "https://www.welcometothejungle.com/jobs/view/108"
+      },
+      "application_url": "https://www.welcometothejungle.com/jobs/apply/108",
+      "tags": ["Security", "Analyst", "CDD"],
+      "photo": "assets/Job/photo_job.jpeg"
+  },
+  {
+      "id": 109,
+      "title": "Développeur Frontend",
+      "company": "Creative Studio",
+      "location": "Lille, France",
+      "salary": "40k-50k EUR",
+      "employment_type": "Freelance",
+      "remote": true,
+      "description": "Développement et maintenance de l'interface utilisateur des applications web.",
+      "requirements": [
+          "Maîtrise de React ou Vue.js",
+          "Expérience avec les CSS frameworks",
+          "Connaissance des bonnes pratiques UX/UI"
+      ],
+      "published_date": "2024-10-10T15:00:00Z",
+      "platform": {
+          "name": "Monster",
+          "url": "https://www.monster.com/jobs/view/109"
+      },
+      "application_url": "https://www.monster.com/jobs/apply/109",
+      "tags": ["Frontend", "Freelance", "Remote"],
+      "photo": "assets/Job/photo_job.jpeg"
+  },
+  {
+      "id": 110,
+      "title": "Product Owner",
+      "company": "Innovative Tech",
+      "location": "Paris, France",
+      "salary": "55k-65k EUR",
+      "employment_type": "CDI",
+      "remote": false,
+      "description": "Définir et prioriser les fonctionnalités produits en fonction des besoins des utilisateurs et des objectifs de l'entreprise.",
+      "requirements": [
+          "Expérience en gestion de produit",
+          "Connaissance des méthodologies Agile",
+          "Bonnes compétences en communication"
+      ],
+      "published_date": "2024-10-05T12:00:00Z",
+      "platform": {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/jobs/view/110"
+      },
+      "application_url": "https://www.linkedin.com/jobs/apply/110",
+      "tags": ["Product Owner", "CDI", "Paris"],
+      "photo": "assets/Job/photo_job.jpeg"
+  }
+]
