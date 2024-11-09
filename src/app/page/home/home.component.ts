@@ -12,7 +12,16 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HttpClientModule, CommonModule, RouterModule,MainContentComponent,BackgroundAnimationComponent,HeaderComponent, FooterComponent, JobListComponent],
+  imports: [
+    HttpClientModule,
+    CommonModule,
+    RouterModule,
+    MainContentComponent,
+    BackgroundAnimationComponent,
+    HeaderComponent,
+    FooterComponent,
+    JobListComponent
+  ],
   providers: [MockDataService], 
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
