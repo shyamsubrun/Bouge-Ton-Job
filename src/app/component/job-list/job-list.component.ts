@@ -18,7 +18,8 @@ export class JobListComponent implements OnInit {
   jobListings: any[] = [];
   filteredJobListings: any[] = [];
 
-  searchQuery: string = '';
+  searchTitle: string = '';
+  searchLocation: string = '';
   employmentType: string = '';
   remoteOnly: boolean = false;
 
@@ -47,14 +48,16 @@ export class JobListComponent implements OnInit {
   }
 
   applyFilters(): void {
-    const query = this.searchQuery.toLowerCase();
+    const titleQuery = this.searchTitle.toLowerCase();
+    const locationQuery = this.searchLocation.toLowerCase();
 
     this.filteredJobListings = this.jobListings.filter(job => {
-      const matchesQuery = job.title.toLowerCase().includes(query) || job.location.toLowerCase().includes(query);
+      const matchesTitle = titleQuery ? job.title.toLowerCase().includes(titleQuery) : true;
+      const matchesLocation = locationQuery ? job.location.toLowerCase().includes(locationQuery) : true;
       const matchesType = this.employmentType ? job.employment_type === this.employmentType : true;
       const matchesRemote = this.remoteOnly ? job.remote : true;
 
-      return matchesQuery && matchesType && matchesRemote;
+      return matchesTitle && matchesLocation && matchesType && matchesRemote;
     });
   }
 }

@@ -1,12 +1,23 @@
 <div class="search-filters">
+    <!-- Barre de recherche pour le titre -->
     <input
         type="text"
-        placeholder="Rechercher un titre ou une localisation..."
-        [(ngModel)]="searchQuery"
+        placeholder="Rechercher par titre..."
+        [(ngModel)]="searchTitle"
         (input)="applyFilters()"
         class="search-input"
     />
 
+    <!-- Barre de recherche pour la localisation -->
+    <input
+        type="text"
+        placeholder="Rechercher par localisation..."
+        [(ngModel)]="searchLocation"
+        (input)="applyFilters()"
+        class="search-input"
+    />
+
+    <!-- Sélecteur pour le type d'emploi -->
     <select [(ngModel)]="employmentType" (change)="applyFilters()" class="filter-select">
         <option value="">Type d'emploi</option>
         <option value="CDI">CDI</option>
