@@ -5,7 +5,7 @@ import { Component, HostListener } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './apropos.component.html',
-  styleUrls: ['./apropos.component.scss'] // Corrige ici
+  styleUrls: ['./apropos.component.scss'] 
 })
 export class AproposComponent {
 
