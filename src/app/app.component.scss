@@ -1,0 +1,50 @@
+/* Structure pour le footer collant */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+.content {
+    flex: 1; /* Prend l'espace restant pour pousser le footer en bas */
+}
+
+/* Styles du footer */
+.footer-container {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Pour que les liens et autres éléments dans le footer restent stylés */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+
+    .footer-link {
+        color: #007BFF;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #0056b3;
+        }
+    }
+}
+
+.footer-contact {
+    .contact-email {
+        color: #007BFF;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #0056b3;
+        }
+    }
+}

@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-apropos',
   standalone: true,
   imports: [],
   templateUrl: './apropos.component.html',
-  styleUrl: './apropos.component.scss'
+  styleUrls: ['./apropos.component.scss'] // Corrige ici
 })
 export class AproposComponent {
+
+
+  
+  
 
 }
