@@ -1,29 +1,37 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MockDataService } from '../../services/mock-data.service';
-import { CommonModule } from '@angular/common'; 
+import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-job-list',
   standalone: true,
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule, HttpClientModule, FormsModule],
   templateUrl: './job-list.component.html',
-  styleUrls: ['./job-list.component.scss'] 
+  styleUrls: ['./job-list.component.scss'],
+  providers: [MockDataService]
 })
-export class JobListComponent {
+export class JobListComponent implements OnInit {
 
   jobListings: any[] = [];
+  filteredJobListings: any[] = [];
+
+  searchQuery: string = '';
+  employmentType: string = '';
+  remoteOnly: boolean = false;
 
   constructor(private mockDataService: MockDataService, private router: Router) {}
 
   ngOnInit(): void {
-    this.loadData();
+    this.loadJobs(); // Charger tous les jobs dès l'initialisation
   }
 
-  loadData() {
+  loadJobs(): void {
     this.mockDataService.getJobListings().subscribe(data => {
       this.jobListings = data;
+      this.filteredJobListings = [...this.jobListings]; // Initialiser filteredJobListings avec tous les jobs
     });
   }
 
@@ -36,5 +44,17 @@ export class JobListComponent {
 
   goToJobDetail(id: number): void {
     this.router.navigate(['/jobs', id]);
+  }
+
+  applyFilters(): void {
+    const query = this.searchQuery.toLowerCase();
+
+    this.filteredJobListings = this.jobListings.filter(job => {
+      const matchesQuery = job.title.toLowerCase().includes(query) || job.location.toLowerCase().includes(query);
+      const matchesType = this.employmentType ? job.employment_type === this.employmentType : true;
+      const matchesRemote = this.remoteOnly ? job.remote : true;
+
+      return matchesQuery && matchesType && matchesRemote;
+    });
   }
 }
