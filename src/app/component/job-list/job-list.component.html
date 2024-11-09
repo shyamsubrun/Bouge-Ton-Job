@@ -1,4 +1,17 @@
-<div *ngFor="let job of jobListings">
-  <h3>{{ job.title }}</h3> <!-- Ajuste cela en fonction de tes données -->
-  <p>{{ job.description }}</p> <!-- Ajuste cela en fonction de tes données -->
+<div class="job-list-container">
+    <div *ngFor="let job of jobListings" class="job-card" (click)="goToJobDetail(job.id)">
+        <div class="job-photo">
+            <img [src]="job.photo" alt="Photo de l'offre d'emploi">
+        </div>
+        <div class="job-details">
+            <h3>{{ job.title }} <span class="employment-type">{{ job.employment_type }}</span></h3>
+            <ul class="job-requirements">
+                <li *ngFor="let requirement of job.requirements">{{ requirement }}</li>
+            </ul>
+            <p class="location">{{ job.location }}</p>
+            <div class="job-footer">
+                <p>il y a {{ getDaysAgo(job.published_date) }} jours sur {{ job.platform.name }}</p>
+            </div>
+        </div>
+    </div>
 </div>

@@ -1,9 +1,9 @@
 <div class="header-container">
     <div class="logo">BTJ</div>
     <nav class="nav-menu">
-        <a routerLink="/" class="nav-item" routerLinkActive="active">Accueil</a>
-        <a routerLink="/jobs" class="nav-item" routerLinkActive="active">Jobs</a>
-        <a routerLink="/apropos" class="nav-item" routerLinkActive="active">Nous</a>
+        <a routerLink="/" class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
+        <a routerLink="/jobs" class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Jobs</a>
+        <a routerLink="/apropos" class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Nous</a>
     </nav>
     <div class="user-icon"></div>
 </div>

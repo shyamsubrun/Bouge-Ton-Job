@@ -1,0 +1,14 @@
+<div class="detail-job-container" *ngIf="job">
+    <h1>{{ job.title }}</h1>
+    <img [src]="job.photo" alt="Photo de l'offre d'emploi" class="job-photo">
+    <p><strong>Entreprise:</strong> {{ job.company }}</p>
+    <p><strong>Localisation:</strong> {{ job.location }}</p>
+    <p><strong>Salaire:</strong> {{ job.salary }}</p>
+    <p><strong>Type d'emploi:</strong> {{ job.employment_type }}</p>
+    <p><strong>Description:</strong> {{ job.description }}</p>
+    <ul>
+        <li *ngFor="let requirement of job.requirements">{{ requirement }}</li>
+    </ul>
+    <p><strong>Publié il y a:</strong> 10 jours</p>
+    <a [href]="job.application_url" target="_blank" class="apply-link">Postuler</a>
+</div>
