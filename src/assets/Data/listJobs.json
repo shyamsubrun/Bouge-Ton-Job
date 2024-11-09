@@ -19,7 +19,8 @@
         "url": "https://www.linkedin.com/jobs/view/101"
       },
       "application_url": "https://www.linkedin.com/jobs/apply/101",
-      "tags": ["IT", "Full Stack", "CDI", "Remote"]
+      "tags": ["IT", "Full Stack", "CDI", "Remote"],
+      "photo": "assets/Job/photo_job.jpeg"
     },
     {
       "id": 102,
@@ -41,7 +42,8 @@
         "url": "https://www.indeed.com/jobs/view/102"
       },
       "application_url": "https://www.indeed.com/jobs/apply/102",
-      "tags": ["Data Science", "CDD", "Machine Learning"]
+      "tags": ["Data Science", "CDD", "Machine Learning"],
+      "photo": "assets/Job/photo_job.jpeg"
     },
     {
       "id": 103,
@@ -63,7 +65,8 @@
         "url": "https://www.welcometothejungle.com/jobs/view/103"
       },
       "application_url": "https://www.welcometothejungle.com/jobs/apply/103",
-      "tags": ["IT", "Gestion de Projet", "CDI"]
+      "tags": ["IT", "Gestion de Projet", "CDI"],
+      "photo": "assets/Job/photo_job.jpeg"
     },
     {
       "id": 104,
@@ -85,7 +88,8 @@
         "url": "https://www.monster.com/jobs/view/104"
       },
       "application_url": "https://www.monster.com/jobs/apply/104",
-      "tags": ["Backend", "Freelance", "Remote"]
+      "tags": ["Backend", "Freelance", "Remote"],
+      "photo": "assets/Job/photo_job.jpeg"
     }
   ]
   
