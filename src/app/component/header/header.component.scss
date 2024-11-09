@@ -3,35 +3,72 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    /*border-bottom: 2px solid #007BFF;  Couleur de la bordure bleue */
+    border-bottom: 2px solid rgba(0, 123, 255, 0.2); /* Bordure subtile en bas */
+    background-color: #ffffff; /* Fond blanc pour le header */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Légère ombre pour la séparation */
 
     .logo {
-        font-size: 1.5em;
+        font-size: 1.8em;
         font-weight: bold;
+        color: #007BFF;
+        font-family: 'Arial', sans-serif;
+        letter-spacing: 2px;
     }
 
     .nav-menu {
         display: flex;
-        gap: 15px;
+        gap: 20px;
 
         .nav-item {
             font-size: 1em;
             text-decoration: none;
             color: #333;
-            padding: 5px 10px;
-            border-radius: 10px;
-            transition: background-color 0.3s;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: color 0.3s, background-color 0.3s, transform 0.3s;
 
             &:hover {
-                background-color: #f0f0f0;
+                background-color: #007BFF;
+                color: #fff;
+                transform: translateY(-2px); /* Légère montée au survol */
+            }
+        }
+
+        /* Effet de surbrillance pour le lien actif */
+        .active {
+            position: relative;
+            font-weight: bold;
+            color: #007BFF;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                width: 100%;
+                height: 3px;
+                background-color: #007BFF;
+                border-radius: 4px;
             }
         }
     }
 
     .user-icon {
-        width: 30px;
-        height: 30px;
-        background-color: #ddd;
+        width: 35px;
+        height: 35px;
+        background: linear-gradient(135deg, #007BFF, #00C6FF); /* Gradient pour l’icône utilisateur */
         border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+        cursor: pointer;
+        transition: box-shadow 0.3s;
+
+        &:hover {
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5); /* Ombre plus forte au survol */
+        }
     }
 }
