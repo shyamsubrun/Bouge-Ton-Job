@@ -1,6 +1,7 @@
-<div class="jobs-page">
-    <h1>Jobs</h1>
-    <p>Découvrez les dernières offres d'emploi disponibles.</p>
-    <!-- Liste des jobs ou contenu à afficher -->
-     <app-job-list></app-job-list>
+<div class="jobs-container">
+    <!-- Barre de recherche et filtres -->
+    <app-search-filters (filtersChanged)="onFiltersChanged($event)"></app-search-filters>
+
+    <!-- Liste des jobs -->
+    <app-job-list [jobListings]="filteredJobListings"></app-job-list>
 </div>
