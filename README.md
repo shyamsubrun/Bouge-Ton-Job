@@ -51,15 +51,15 @@ Les données gérées incluent :
 L'application comporte :  
 
 - **Page d'accueil** : Introduction au projet et recherche d'offres.
-- 
+  
 ![screencapture-127-0-0-1-4200-2024-11-19-23_25_35](https://github.com/user-attachments/assets/2a53ad7d-5fa0-4cc6-822f-fb5869fb4d01)
 
 - **Page des Offres** : Liste des offres correspondant aux recherches des utilisateurs.
-- 
+  
   ![screencapture-127-0-0-1-4200-jobs-2024-11-19-23_25_40](https://github.com/user-attachments/assets/b634fef6-e800-466d-83c3-4222ca39ffe0)
 
 - **Page À Propos** : Informations sur la plateforme et son fonctionnement.
-- 
+  
 ![screencapture-127-0-0-1-4200-apropos-2024-11-19-23_25_46](https://github.com/user-attachments/assets/cc1de074-c717-4606-ab2a-ef86a2b999fc)
 
 > **Note** : Ces fonctionnalités sont actuellement en cours de développement avec des données statiques simulées via des fichiers JSON.  
